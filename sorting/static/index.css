@@ -37,6 +37,7 @@ input[type="radio" i] {
 }
 img{
     vertical-align: middle;
+    margin-left: 1%;
 }
 ul {
     display: inline-block;
