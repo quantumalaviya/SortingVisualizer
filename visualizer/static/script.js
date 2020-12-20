@@ -86,8 +86,8 @@ function processForm(form, b) {
                                     setTimeout(function(){
                                         e1 = document.getElementById(arr[i][j][0])
                                         e2 = document.getElementById(arr[i][j][1])
-                                        e1.style.backgroundColor = "#58bdc4";
-                                        e2.style.backgroundColor = "#585ac4";
+                                        e1.style.backgroundColor = "#FBA465";
+                                        e2.style.backgroundColor = "#f86e51";
                                     }, x)
                                     x+=5
                                     setTimeout(function(){
@@ -96,8 +96,8 @@ function processForm(form, b) {
                                             e1.innerHTML = e2.innerHTML
                                             e2.innerHTML = temp
                                         }
-                                        e2.style.backgroundColor = "#58bdc4";
-                                        e1.style.backgroundColor = "#585ac4";
+                                        e2.style.backgroundColor = "#FBA465";
+                                        e1.style.backgroundColor = "#f86e51";
                                     }, x)
                                     x+=5
                                     setTimeout(function(){
@@ -106,7 +106,7 @@ function processForm(form, b) {
                                     }, x)
                                 }
                                 setTimeout(function(){
-                                    document.getElementById(arr[i][arr[i].length - 1]).style.backgroundColor = "#239140";
+                                    document.getElementById(arr[i][arr[i].length - 1]).style.backgroundColor = "#99b898";
                                 }, x)
                             }, t)
                             t+=10*(arr[i].length)
@@ -127,34 +127,34 @@ function processForm(form, b) {
                                 e1 = document.getElementById(curr[0])
                                 key = e1.innerHTML;
                                 changeC(document.getElementsByClassName('element'),  "#d1193e");
-                                e1.style.backgroundColor = "#58bdc4";
+                                e1.style.backgroundColor = "#FBA465";
                                 for(let j = 1; j<curr.length-1;j+=1){
                                     setTimeout( function(){
-                                        e1.style.backgroundColor = "#585ac4";
+                                        e1.style.backgroundColor = "#f86e51";
                                         e1 = document.getElementById(curr[j][0])
                                         e2 = document.getElementById(curr[j][1])
                                         e1.innerHTML = e2.innerHTML
-                                        e2.style.backgroundColor = "#58bdc4";
+                                        e2.style.backgroundColor = "#FBA465";
                                     }, 10*j)
                                 }
                                 setTimeout( function(){
                                     r = curr[curr.length-1]
                                     r = document.getElementById(r)
-                                    r.style.bakgroundColor = "#58bdc4";
+                                    r.style.bakgroundColor = "#FBA465";
                                     r.innerHTML = key;
                                 }, 10*curr.length);
 
                                 setTimeout( function(){
                                     r = curr[curr.length-1]
                                     r = document.getElementById(r)
-                                    r.style.bakgroundColor = "#239140";
+                                    r.style.bakgroundColor = "#99b898";
                                 }, 10*curr.length+10);
                             }, k);
                             k+=10*arr[i].length+10
 
                         }
                         setTimeout(function(){
-                            changeC(document.getElementsByClassName('element'), "#239140");
+                            changeC(document.getElementsByClassName('element'), "#99b898");
                             b.disabled = false
                             s.disabled = false
                         }, k);
@@ -173,25 +173,25 @@ function processForm(form, b) {
                                     e2.style.backgroundColor = "#d1193e";
                                 }
                                 x = 0
-                                e1.style.backgroundColor = "#58bdc4";
+                                e1.style.backgroundColor = "#FBA465";
                                 for(let j = 1; j<curr.length-1;j+=1){
                                     setTimeout( function(){
                                         e2 = document.getElementById(curr[j]);
-                                        e2.style.backgroundColor = "#585ac4";
+                                        e2.style.backgroundColor = "#f86e51";
                                     }, x+10);
                                     x+=10
                                 }
                                 r = document.getElementById(curr[curr.length - 1])
                                 setTimeout(function(){
-                                    r.style.backgroundColor = "#239140"
+                                    r.style.backgroundColor = "#99b898"
                                 }, x+10);
                                 x+=10
                                 setTimeout(function(){
                                     temp = e1.innerHTML;
                                     e1.innerHTML = r.innerHTML;
                                     r.innerHTML = temp;
-                                    r.style.backgroundColor = "#58bdc4";
-                                    e1.style.backgroundColor = "#239140";
+                                    r.style.backgroundColor = "#FBA465";
+                                    e1.style.backgroundColor = "#99b898";
                                 }, x+10)
                                 x+=10
                             }, k);
@@ -215,9 +215,9 @@ function processForm(form, b) {
                                     k = document.getElementById(arr[i][j][0]);
                                     if(arr[i][j][2] && arr[i][j][2]>=arr[i][j][0]){
                                         z = document.getElementById(arr[i][j][2]);
-                                        z.style.backgroundColor = "#585ac4";
+                                        z.style.backgroundColor = "#f86e51";
                                     }
-                                    k.style.backgroundColor = "#58bdc4";
+                                    k.style.backgroundColor = "#FBA465";
                                     value = "";
                                     for(let m = 0; m <= arr[i][j][3]; m+=1)
                                         value = value.concat("<br>")
@@ -228,7 +228,7 @@ function processForm(form, b) {
                                     if (z)  
                                         z.style.backgroundColor = "#d1193e";
                                     if(i == (arr.length - 1))
-                                        k.style.backgroundColor = "#239140";
+                                        k.style.backgroundColor = "#99b898";
                                     else
                                         k.style.backgroundColor = "#d1193e";
                                 }, x)
@@ -236,7 +236,7 @@ function processForm(form, b) {
                         }
 
                         setTimeout(function(){
-                            changeC(document.getElementsByClassName('element'), "#239140");
+                            changeC(document.getElementsByClassName('element'), "#99b898");
                             b.disabled = false
                             s.disabled = false
                         }, x);
@@ -252,11 +252,11 @@ function processForm(form, b) {
                         for(let i = 0; i < heapify.length; i+=1){
                             setTimeout(function(){
                                 if(e1)
-                                    e1.style.backgroundColor = "#f55d42";
+                                    e1.style.backgroundColor = "#f2c85b";
                                 e1 = document.getElementById(heapify[i][0])
                                 e2 = document.getElementById(heapify[i][1])
-                                e1.style.backgroundColor = "#58bdc4";
-                                e2.style.backgroundColor = "#585ac4";
+                                e1.style.backgroundColor = "#FBA465";
+                                e2.style.backgroundColor = "#f86e51";
                                 temp = e1.innerHTML
                                 e1.innerHTML = e2.innerHTML
                                 e2.innerHTML = temp
@@ -264,7 +264,7 @@ function processForm(form, b) {
                             x+=10
                         }
                         setTimeout(function(){
-                            changeC(document.getElementsByClassName('element'), "#f55d42");
+                            changeC(document.getElementsByClassName('element'), "#f2c85b");
                         }, x)
                         x+=10
                         e1 = e2 =false
@@ -274,13 +274,13 @@ function processForm(form, b) {
                                 setTimeout(function(){  
                                     cc = arr[i][j]
                                     if(e1)
-                                        e1.style.backgroundColor = "#f55d42";
+                                        e1.style.backgroundColor = "#f2c85b";
                                     if(e2)
-                                        e1.style.backgroundColor = "#f55d42";
+                                        e1.style.backgroundColor = "#f2c85b";
                                     e1 = document.getElementById(cc[0]);
                                     e2 = document.getElementById(cc[1]);
-                                    e1.style.backgroundColor = "#58bdc4";
-                                    e2.style.backgroundColor = "#585ac4";
+                                    e1.style.backgroundColor = "#FBA465";
+                                    e2.style.backgroundColor = "#f86e51";
                                     temp = e1.innerHTML;
                                     e1.innerHTML = e2.innerHTML;
                                     e2.innerHTML = temp;            
@@ -289,12 +289,12 @@ function processForm(form, b) {
 
                             }
                             setTimeout(function(){
-                                document.getElementById(arr[i][arr[i].length - 1]).style.backgroundColor = "#239140";
+                                document.getElementById(arr[i][arr[i].length - 1]).style.backgroundColor = "#99b898";
                             }, x)
                             x+=10
                         }
                         setTimeout(function(){
-                            changeC(document.getElementsByClassName('element'), "#239140");
+                            changeC(document.getElementsByClassName('element'), "#99b898");
                             b.disabled = false
                             s.disabled = false
                         }, x)
@@ -310,15 +310,15 @@ function processForm(form, b) {
                                 pi = document.getElementById(arr[i][0])
                                 low = document.getElementById(arr[i][1])
                                 high = document.getElementById(arr[i][2])
-                                pi.style.backgroundColor = "#585ac4";
-                                low.style.backgroundColor = "#58bdc4";
-                                high.style.backgroundColor = "#58bdc4";
+                                pi.style.backgroundColor = "#f86e51";
+                                low.style.backgroundColor = "#FBA465";
+                                high.style.backgroundColor = "#FBA465";
                                 var x = 10;
                                 setTimeout(function(){
                                     var temp = pi.innerHTML;
                                     pi.innerHTML = high.innerHTML;
                                     high.innerHTML = temp;
-                                    high.style.backgroundColor = "#585ac4";
+                                    high.style.backgroundColor = "#f86e51";
                                     pi.style.backgroundColor = "#d1193e";
                                 }, x)
                                 x+=10
@@ -326,8 +326,8 @@ function processForm(form, b) {
                                     setTimeout(function(){
                                         e1 = document.getElementById(arr[i][j][0])
                                         e2 = document.getElementById(arr[i][j][1])
-                                        e1.style.backgroundColor = "#585ac4";
-                                        e2.style.backgroundColor = "#58bdc4";
+                                        e1.style.backgroundColor = "#f86e51";
+                                        e2.style.backgroundColor = "#FBA465";
                                         var temp = e1.innerHTML
                                         e1.innerHTML = e2.innerHTML
                                         e2.innerHTML = temp
@@ -339,14 +339,14 @@ function processForm(form, b) {
                                     }, x)
                                 }
                                 setTimeout(function(){
-                                    document.getElementById(arr[i][arr[i].length - 1]).style.backgroundColor = "#239140";
+                                    document.getElementById(arr[i][arr[i].length - 1]).style.backgroundColor = "#99b898";
                                 }, x)
                             }, t)
                             t+=10
                             t+=(arr[i].length-2)*10
                         }
                         setTimeout(function(){
-                            changeC(document.getElementsByClassName('element'), "#239140");
+                            changeC(document.getElementsByClassName('element'), "#99b898");
                             b.disabled = false
                             s.disabled = false
                         }, t)
