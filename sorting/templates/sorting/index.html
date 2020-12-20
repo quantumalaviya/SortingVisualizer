@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting Visualizer</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = {% static "script.js" %}></script>
+        <link rel = "stylesheet" href = {% static "index.css" %}>
+    </head>
+    <body>
+        <div id="navbar">
+            <img src = {% static "test.png" %} width = 5% height = 100%>
+            <div id = "sliderContainer">
+                <label for = "slider">SIZE: </label>
+                <input id = "slider" type="range" min="5" max="100" value={{len}} name = "len" oninput = "callUpdate(this.value)" onchange="callFun(this.value)">
+                <p id = "val">{{len}}</p>
+            </div>
+            <form method = "post" id = "nav">
+                {% csrf_token %}
+                {{ form }}
+                <button type="button" form="nav" value="Submit" id = "sub" onClick="processForm(this.form, this)"><b>SORT</b></button>
+            </form>
+        </div>
+        <br>
+        <br>
+        <div id = "main">
+            {% for i in arr %}
+                <div class = "element" id = "element{{ forloop.counter }}" style = "background-color: #d1193e">
+                    {% with ''|center:i as range %}
+                    {% for _ in range %}
+                        <br>
+                    {% endfor %}
+                    {% endwith %}
+                    <br>
+                </div> 
+                {% endfor %}
+        </div>
+    </body>
+</html>

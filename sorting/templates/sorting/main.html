@@ -1,0 +1,11 @@
+{% for i in arr %}
+<div class = "element"  id = "element{{ forloop.counter }}" style = "background-color: #d1193e">
+    <br>
+{% with ''|center:i as range %}
+{% for _ in range %}
+<br>
+{% endfor %}
+{% endwith %}
+</div> 
+{% endfor %}
+
